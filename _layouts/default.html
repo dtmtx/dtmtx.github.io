@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <!--body>
 
     <div class="container content">
       <div class="masthead">
@@ -11,16 +11,8 @@
           <a href="/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
-      </div>
+      </div-->
 
       {{ content }}
 
-      <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-        </p>
-      </div>
-    </div>
-
-  </body>
-</html>
+  {% include foot.html %}
