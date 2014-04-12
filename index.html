@@ -3,35 +3,603 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- Home Banner ("light" and "dark" style can be applied here) -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div class="home-banner dark">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Slides -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <ul class="slider-container" id="home-slider">
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- Slide 1 (Big Title & Text) -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <li class="slide-outer">
+            <div class="slide-inner">
+              <div class="content-width">
+                <div class="slide-style-3">
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="left-column">
+                    <!-- Title Data is your distinct competitive advantage. -->
+                    <h1>Unlock the answers in your data<span>.</span></h1>
+                    <!-- Text Make quality informed decisions by getting quick insights from your data-->
+                    <p>We are exclusively focused on providing solutions to unlock the value in your data.</p>
+                    <!-- Button -->
+                    <a class="button accent" href="#"><i class="fa fa-info-circle"></i>More Info</a>
+                    <!-- Button -->
+                    <!--a class="button white" href="#"><i class="fa fa-envelope"></i>Contact Us</a-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="right-column">
+                    <!-- Image -->
+                    <!--img alt="" src="images/iphone-image.png"/-->
+                    <!--img alt="" src="images/datamatrix-banner4.jpg"/-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- END Slide 1 -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- Slide 2 (Centered Icon & Text) -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <li class="slide-outer">
+            <div class="slide-inner">
+              <div class="content-width">
+                <div class="slide-style-3">
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="left-column">
+                    <!-- Title Data is your distinct competitive advantage. -->
+                    <h1>Make Informed Decisions<span>.</span></h1>
+                    <!-- Text Make quality informed decisions by getting quick insights from your data-->
+                    <p>Make quality informed decisions with real business impact by getting quick insights from your data.</p>
+                    <!-- Button -->
+                    <a class="button accent" href="#"><i class="fa fa-info-circle"></i>More Info</a>
+                    <!-- Button -->
+                    <!--a class="button white" href="#"><i class="fa fa-envelope"></i>Contact Us</a-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="right-column">
+                    <!-- Image -->
+                    <!--img alt="" src="images/iphone-image.png"/-->
+                    <!--img alt="" src="images/datamatrix-banner4.jpg"/-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- END Slide 2 -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- Slide 3 (Left Text / Right Image) -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <li class="slide-outer">
+            <div class="slide-inner">
+              <div class="content-width">
+                <div class="slide-style-3">
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="left-column">
+                    <!-- Title Data is your distinct competitive advantage. -->
+                    <h1>Stay Up To Date In The Office Or On-the-go<span>.</span></h1>
+                    <!-- Text Make quality informed decisions by getting quick insights from your data-->
+                    <p>We deliver the right information at the right time in the right manner to the right people within your organization.</p>
+                    <!-- Button -->
+                    <a class="button accent" href="#"><i class="fa fa-info-circle"></i>More Info</a>
+                    <!-- Button -->
+                    <!--a class="button white" href="#"><i class="fa fa-envelope"></i>Contact Us</a-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Left Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <div class="right-column">
+                    <!-- Image -->
+                    <!--img alt="" src="images/iphone-image.png"/-->
+                    <!--img alt="" src="images/datamatrix-banner4.jpg"/-->
+                  </div>
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Right Column -->
+                  <!-- ~~~~~~~~~~~~~~~~~ -->
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+          <!-- END Slide 3 -->
+          <!-- ~~~~~~~~~~~~~~~~~ -->
+
+        </ul>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- END Slides -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Banner Navigation Bar -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="slider-nav-container">
+          <div class="slider-nav-inner">
+            <div class="slider-nav content-width">
+
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <!-- Slide Links -->
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <ul id="bx-pager">
+                <li><a data-slide-index="0" href="">Unlock Your Data</a></li>
+                <li><a data-slide-index="1" href="">Make Informed Decisions</a></li>
+                <li><a data-slide-index="2" href="">Any Device Anywhere</a></li>
+              </ul>
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <!-- END Slide Links -->
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <!-- Slide Controls -->
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <div class="slider-controls">
+                <div id="slider-pause"></div>
+                <div id="slider-prev"></div>
+                <div id="slider-next"></div>
+              </div>
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+              <!-- END Slide Controls -->
+              <!-- ~~~~~~~~~~~~~~~~~ -->
+
+            </div>
+          </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- END Banner Navigation Bar -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      </div>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END Home Banner -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- CTA Bar - Set "white", "accent" or "dark" -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div class="home-cta-bar-container accent">
+
+        <div class="content-width">
+          <div class="home-cta-bar">
+            <!-- Text -->
+            <div class="text">
+              Learn how you can use your data as a distinct competitive advantage
+            </div>
+            <!-- Button -->
+            <div class="home-cta-bar-button">
+              <a class="button white" href="#"><i class="fa fa-envelope"></i>Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END CTA Bar -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- Main Content -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div class="main-content">
+        <div class="main-content-inner content-width">
+
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- Left Aligned Icons & Text -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          
+          
+
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- Navigation (Back/Next) -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!--div id="portfolio-nav" class="carousel-nav">
+            <div class="back"></div>
+            <div class="next"></div>
+          </div-->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- END Navigation (Back/Next) -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- The Carousel -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- END Carousel -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- Latest News / Testimonials (Three Quater/One Fourth) -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <div class="column-container">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Latest News Columns -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="column-three-qtr">
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Divider -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!--div class="divider"></div-->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Divider -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Title -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!--h3 class="section-title">What's going on?</h3-->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Title -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Navigation (Back/Next) -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!--div id="blog-nav" class="carousel-nav">
+                <div class="back"></div>
+                <div class="next"></div>
+              </div-->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Navigation (Back/Next) -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- The Carousel -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <div class="carousel">
+                <ul id="blog-carousel" class="slider-container">
+
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <li class="column-one-fourth">
+                    <!-- Image -->
+                    <!--a href="blog-post.html" class="image-link"><img alt="" src="images/placeholders/placeholder-large.jpg" class="fullwidth"/></a-->
+                    <!-- Title -->
+                    <h3><a href="blog-post.html">Business Intelligence</a></h3>
+                    <!-- Date -->
+                    <!--div class="date">12th June 2013</div-->
+                    <!-- Excerpt -->
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ...</p>
+                    <!-- Read More Link -->
+                    <a href="blog-post.html">Read More</a>
+                  </li>
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- END One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <li class="column-one-fourth">
+                    <!-- Image -->
+                    <!--a href="blog-post.html" class="image-link"><img alt="" src="images/placeholders/placeholder-large.jpg" class="fullwidth"/></a-->
+                    <!-- Title -->
+                    <h3><a href="blog-post.html">Industries</a></h3>
+                    <!-- Date -->
+                    <!--div class="date">12th June 2013</div-->
+                    <!-- Excerpt -->
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ...</p>
+                    <!-- Read More Link -->
+                    <a href="blog-post.html">Read More</a>
+                  </li>
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- END One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <li class="column-one-fourth">
+                    <!-- Image -->
+                    <!--a href="blog-post.html" class="image-link"><img alt="" src="images/placeholders/placeholder-large.jpg" class="fullwidth"/></a-->
+                    <!-- Title -->
+                    <h3><a href="blog-post.html">Become Data Driven</a></h3>
+                    <!-- Date -->
+                    <!--div class="date">12th June 2013</div-->
+                    <!-- Excerpt -->
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ...</p>
+                    <!-- Read More Link -->
+                    <a href="blog-post.html">Read More</a>
+                  </li>
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- END One Fourth -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </ul>
+              </div>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Carousel -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- END Latest News Columns -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Testimonials Column -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="column-one-fourth">
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Divider -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!--div class="divider"></div-->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Divider -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Title -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <h3 class="section-title">Case Studies</h3>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Title -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Navigation (Back/Next) -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <div id="testimonials-nav" class="carousel-nav">
+                <div class="back"></div>
+                <div class="next"></div>
+              </div>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Navigation (Back/Next) -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- Carousel -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <div class="carousel">
+                <ul id="testimonials-carousel" class="slider-container">
+
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- Testimonial 1 -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <li class="column-one-fourth">
+                    <!-- Text -->
+                    <div class="testimonial-text">
+                      <p>"What ever happened to predictability? Everywhere you look, everywhere you go, there's a heart, a hand to hold onto."</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="testimonial-name">
+                      Joe Bloggs
+                    </div>
+                    <!-- Company URL -->
+                    <div class="testimonial-link">
+                      <a href="#">Company Name</a>
+                    </div>
+                  </li>
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Testimonial 1 -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- Testimonial 2 -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <li class="column-one-fourth">
+                    <!-- Text -->
+                    <div class="testimonial-text">
+                      <p>"Basix have proven time and time again that they can deliver results on time and on price!"</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="testimonial-name">
+                      Joe Bloggs
+                    </div>
+                    <!-- Company URL -->
+                    <div class="testimonial-link">
+                      <a href="#">ThemeForest</a>
+                    </div>
+                  </li>
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                  <!-- END Testimonial 2 -->
+                  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </ul>
+              </div>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+              <!-- END Carousel -->
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- END Testimonials Column -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+          </div>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!-- END Latest News / Testimonials -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        </div>
+      </div>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END Main Content -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- Footer Container -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div class="footer-container">
+
+        <!-- Spacer (20px gap) -->
+        <div class="spacer"></div>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Client Logos -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="content-width">
+          <div class="client-logos-container">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Title -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="client-logos-title">
+              <span>Recent Clients</span>
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- END Title -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Navigation (Back / Next) -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div id="clients-back"></div>
+            <div id="clients-next"></div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- END Navigation -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Carousel -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="carousel">
+              <ul id="clients-carousel" class="column-container">
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo1.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo2.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo3.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo4.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo5.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <li class="">
+                  <div class="logo-outer">
+                    <div class="logo-inner">
+                      <!-- Actual Logo -->
+                      <img alt="" src="images/client-logos/logo6.png"/>
+                    </div>
+                  </div>
+                </li>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <!-- END Logo -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+              </ul>
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- END Carousel -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+          </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- END Client Logos -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Footer Infobar -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="footer-infobar">
+          <div class="content-width">
+            <!-- Text -->
+            If you're looking for a corporate theme that stands out from the usual junk then it's your lucky day!
+          </div>
+        </div>
