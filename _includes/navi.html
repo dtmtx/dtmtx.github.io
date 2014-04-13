@@ -4,7 +4,7 @@
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <ul class="topnav">
             <li><a href="index.html" class= {{ page.active }}>Home</a></li>
-            <li><a href="solutions.html" class = {{ page.active }}>Solutions</a></li>
+            <li><a href="solutions.html" class = {% if page.url == "/solutions.html" %} {{ page.active }}>Solutions</a></li>
             <li><a href="industries.html" class="drop">Industries</a>
               <ul>
                 <li><a href="financial-services.html">Financial Services</a></li>
