@@ -3,9 +3,9 @@
           <!-- Main Navigation -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <ul class="topnav">
-            <li><a href="index.html" class= {{ page.active }}>Home</a></li>
+            <li><a href="index.html" class = {% if page.url == "/index.html" %} {{ page.active }} {% else %} "" {% endif %}>Home</a></li>
             <li><a href="solutions.html" class = {% if page.url == "/solutions.html" %} {{ page.active }} {% else %} "" {% endif %}>Solutions</a></li>
-            <li><a href="industries.html" class="drop">Industries</a>
+            <li><a href="industries.html" class="drop {% if page.url == "/industries.html" %} {{ page.active }} {% else %} "" {% endif %}">Industries</a>
               <ul>
                 <li><a href="financial-services.html">Financial Services</a></li>
                 <li><a href="insurance.html">Insurance</a></li>
@@ -19,7 +19,7 @@
                 <li><a href="portfolio-detail.html">Portfolio Detail</a></li-->
               </ul>
             </li>
-            <li><a href="about.html" class="drop {{ page.active }}" >Company</a>
+            <li><a href="about.html" class="drop class = {% if page.url == "/about.html" %} {{ page.active }} {% else %} "" {% endif %}" >Company</a>
               <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="partners.html">Partners</a></li>
@@ -34,8 +34,8 @@
               </ul>
             </li-->
             <!--li><a href="shortcodes.html">Shortcodes</a></li-->
-            <li><a href="contact.html" class= {{ page.active }}>Contact Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class = {% if page.url == "/contact.html" %} {{ page.active }} {% else %} "" {% endif %}>Contact Us</a></li>
+            <li><a href="blog.html" class = {% if page.url == "/blog.html" %} {{ page.active }} {% else %} "" {% endif %}>Blog</a></li>
           </ul>
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <!-- END Main Navigation -->
