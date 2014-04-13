@@ -12,14 +12,14 @@
                 <li><a href="telecom.html">Telecom</a></li>
                 <li><a href="retail.html">Retail</a></li>
                 <li><a href="manufacturing.html">Manufacturing</a></li>
-                <li><a href="health-pharma.html">Health & Pharma</a></li>
+                <!--li><a href="health-pharma.html">Health & Pharma</a></li-->
                 <li><a href="oil-gas.html">Oil & Gas</a></li>
                 <li><a href="public-sector.html">Public Sector</a></li>
                 <!--li><a href="portfolio-3-columns.html">3 Column Portfolio</a></li>
                 <li><a href="portfolio-detail.html">Portfolio Detail</a></li-->
               </ul>
             </li>
-            <li><a href="about.html" class="drop class = {% if page.url == "/about.html" %} {{ page.active }} {% else %} "" {% endif %}" >Company</a>
+            <li><a href="about.html" class="drop class = {% if page.url == "/about.html" or page.menugroup == "company" %} {{ page.active }} {% else %} "" {% endif %}" >Company</a>
               <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="partners.html">Partners</a></li>
