@@ -832,7 +832,7 @@ body.home .topbar-outer.dark {
 .home-banner {
 	background-attachment:fixed;
   	/*background-image:url(http://artivity.co.uk/templates/basix/white_top_fixed_banner_image/fixed-banner-image.jpg);*/
-  	background-image:url(../images/datamatrix_banner2.jpg);
+  	background-image:url(../images/datamatrix_banner4.jpg);
   	background-position:50% 0;
   	background-repeat:no-repeat no-repeat;
   	min-height:107px;
@@ -864,7 +864,7 @@ body.home .topbar-outer.dark {
 }
 .home-banner h1 {
 	letter-spacing: 0;
-	font-weight: 700;
+	font-weight: 300;
 }
 .home-banner h1:after {
 	content: '';
