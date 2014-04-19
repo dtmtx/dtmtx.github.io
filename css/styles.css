@@ -829,17 +829,28 @@ body.home .topbar-outer.dark {
 /* --------------------------------------------------------------------------------- */
 /* Home Page Banner
 /* --------------------------------------------------------------------------------- */
-.home-banner {
+/*.home-banner {
 	background-attachment:fixed;
-  	/*background-image:url(http://artivity.co.uk/templates/basix/white_top_fixed_banner_image/fixed-banner-image.jpg);*/
+  	/*background-image:url(http://artivity.co.uk/templates/basix/white_top_fixed_banner_image/fixed-banner-image.jpg);
   	background-image:url(../images/datamatrix_banner.jpg);
   	background-position:50% 0;
-  	background-repeat:no-repeat;
+  	background-repeat:no-repeat no-repeat;
   	min-height:107px;
   	position:relative;
   	width:100%;
 
+}*/
+
+.home-banner {
+	background-attachment:fixed;
+  	/*background-image:url(http://artivity.co.uk/templates/basix/white_top_fixed_banner_image/fixed-banner-image.jpg);*/
+  	background-image:url(../images/datamatrix_banner.jpg);
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
+
 .home-banner.dark {
 	background-color: #1b222e;
 	color: rgba(255,255,255,0.7);
