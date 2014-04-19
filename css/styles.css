@@ -989,11 +989,11 @@ body.home .topbar-outer.dark {
 }
 .slide-style-3 .left-column {
 	display: table-cell;
-	width: 50%; /* endyk updated from 50% */
+	width: 40%; /* endyk updated from 50% */
 	padding-right: 30px;
 	height: 100%;
 	vertical-align: middle;
-	padding-top: 95px;
+	padding-top: 85px;
 	padding-bottom: 95px;
 }
 .slide-style-3 .right-column {
