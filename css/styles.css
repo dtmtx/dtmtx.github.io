@@ -989,7 +989,7 @@ body.home .topbar-outer.dark {
 }
 .slide-style-3 .left-column {
 	display: table-cell;
-	width: 40%; /* endyk updated from 50% */
+	width: 30%; /* endyk updated from 50% */
 	padding-right: 30px;
 	height: 100%;
 	vertical-align: middle;
