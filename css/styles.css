@@ -836,8 +836,8 @@ body.home .topbar-outer.dark {
   	background-position:50% 0;
   	background-repeat:no-repeat no-repeat;
   	min-height:107px;
-  	position:relative;
-  	width:90%;
+  	position: absolute;
+  	width:100%;
 
 }
 .home-banner.dark {
