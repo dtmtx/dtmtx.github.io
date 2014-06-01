@@ -996,13 +996,13 @@ body.home .topbar-outer.dark {
 	padding-top: 95px;
 	padding-bottom: 95px;
 }
-.slide-style-3 .right-column {
+.slide-style-3 .right-column { /*endyk updated*/
 	display: table-cell;
 	width: 50%;
 	height: 100%;
-	vertical-align: bottom;
+	vertical-align: top;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 0px;
 	line-height: 0;
 }
 .slide-style-3 h1 {
